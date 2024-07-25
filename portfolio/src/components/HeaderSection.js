@@ -40,7 +40,7 @@ function HeaderSection() {
       </div>
       <div className="index-page-middle-header-content">
         <h1>PEDRO PAJARILLO JR.</h1>
-        <h3>SOFTWARE ENGINEERING FELLOW AT HEADSTARTER AI</h3>
+        <h3>SOFTWARE ENGINEERING FELLOW AT HEADSTARTER AI | 5x HACKATHON WINNER</h3>
         <h4>SCROLL FOR MORE INFO<br />&#x2193;</h4>
       </div>
     </section>

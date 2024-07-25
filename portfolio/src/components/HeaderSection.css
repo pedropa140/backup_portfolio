@@ -46,12 +46,14 @@ section.index-page-middle-header h4 {
 	font-weight: bolder;
 	padding: 0px;
 	margin-top: 200px;
+	text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7)
 }
 
 section.index-page-middle-header  h3 {
 	color: white;
 	padding: 0px;
 	font-weight: 500px;
+	text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7)
 }
 
 section.index-page-middle-header h1 {
@@ -63,4 +65,5 @@ section.index-page-middle-header h1 {
 	font-size: 72px;
 	-webkit-text-stroke-width: 3px;
   	-webkit-text-stroke-color: #F3F3F3;
+	  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7)
 }
