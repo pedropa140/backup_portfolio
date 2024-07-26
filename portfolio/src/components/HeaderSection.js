@@ -4,15 +4,7 @@ import './HeaderSection.css';
 const images = [
   '/images/image_1.JPG',
   '/images/image_2.JPG',
-  '/images/image_3.JPG',
-  '/images/image_4.JPG',
-  '/images/image_5.JPG',
-  '/images/image_6.JPG',
-  '/images/image_7.JPG',
-  '/images/image_8.JPG',
-  '/images/image_9.JPG',
-  '/images/image_10.JPG',
-  '/images/image_11.JPG'
+  '/images/image_3.JPG'
 ];
 
 function HeaderSection() {
