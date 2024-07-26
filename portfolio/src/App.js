@@ -30,9 +30,6 @@ function App() {
           <ul>
             <li><a href="#about">ABOUT ME</a></li>
             <li><a href="#projects">PROJECTS</a></li>
-            <li><a href="#experience">EXPERIENCE</a></li>
-            <li><a href="#github">GITHUB</a></li>
-            <li><a href="#hackathon">HACKATHON</a></li>
             <li><a href="#contact">CONTACT</a></li>            
           </ul>
         </nav>
@@ -45,13 +42,19 @@ function App() {
         <div className="about-text">
           <h2>About Me</h2>
           <p>
-            Hello! I'm Pedro Pajarillo Jr., a passionate computer science student and software engineer with a keen interest in innovative technology and programming. I specialize in developing web applications, exploring quantum computing, and improving user experiences through clean, effective code.
-          </p>
-          <p>
-            My journey began with a deep curiosity about how things work, leading me to pursue a degree in computer science. Over the years, I've had the opportunity to work on various exciting projects, including developing bots and applications that have helped streamline workflows and enhance user engagement.
-          </p>
-          <p>
-            When I'm not coding, you can find me exploring new technologies, reading up on the latest advancements in AI and quantum computing, or working on personal projects that challenge my skills and creativity. I believe in continuous learning and am always looking for new ways to grow and contribute to the tech community.
+          I am a dedicated and passionate Computer Science professional currently serving as the Head ILab Assistant and Computer Science Student Manager at Rutgers University. Since January 2022, I have been leading a team of 12 computer science tutors, assisting over 70 students per week in mastering data structures and algorithms. My role extends to maintaining over 30 PC servers, performing troubleshooting, and conducting routine maintenance to ensure optimal performance.
+          <br></br>
+          In addition to my technical responsibilities, I take pride in fostering a welcoming and supportive environment for students and professors. I lead computer science tours, helping to introduce prospective students to the vibrant and dynamic community at Rutgers.
+          <br></br>
+          As a Head Graduate Teaching Assistant, a position I've held since September 2023, I grade and teach Python to more than 40 students in the Master of Business and Science degree program. I act as the primary communicator between teaching assistants and the head professor, and I dedicate over six hours weekly to office hours, providing students with the support they need to solidify their understanding of lecture topics. I also design and implement new assignments that challenge students and ensure alignment with curriculum objectives.
+          <br></br>
+          I hold a Bachelor of Science in Computer Science with a Minor in Cognitive Science from Rutgers University, with a GPA of 3.3/4.0. I also earned an Associate in Science in Computer Science from Middlesex County College, where I made the Dean’s List with a GPA of 3.5/4.0. Additionally, I participated in the IBM Qiskit Global Summer School in both 2022 and 2023, further honing my skills in quantum computing.
+          <br></br>
+          My personal projects include Green Habits, a task planner focused on sustainability that won the HackRU Spring Hackathon in 2024, and two Discord bots: a Reminder Bot that helps users keep track of tasks and events, and a Gambling Bot that provides a simulated casino experience.
+          <br></br>
+          My technical skills encompass a wide range of programming languages, frameworks, and APIs, including Python, Java, C, HTML, CSS, JavaScript, SQL, Flask, Django, and more.
+          <br></br>
+          My journey in academia and hands-on experience in computer science has equipped me with a unique blend of technical expertise, leadership skills, and a passion for teaching and mentoring. I am committed to inspiring the next generation of computer scientists and continuously striving to create an engaging and enriching learning experience for all students.
           </p>
         </div>
       </section>
@@ -116,11 +119,35 @@ function App() {
             The Gambling Discord-Bot has been a popular addition to many gaming and entertainment-focused Discord servers. The project showcases my skills in creating engaging and interactive applications, and highlights my ability to develop complex systems with user-centric features.
           </p>
         </div>
+        <div className="project">
+          <h3>BeReal-Bot</h3>
+          <p>
+            Welcome to BeReal-Bot! 👋 This bot is designed to capture authentic moments, just like the BeReal app. Every day, at a random time, you’ll be prompted to share a photo that showcases your true self—no filters, no edits! 📸✨
+          </p>
+          <p>
+            How It Works:
+            <ul>
+              <li>
+                <strong>Random Moment:</strong> You’ll receive a notification at a surprise time.
+              </li>
+              <li>
+                <strong>Snap a Pic:</strong> You’ll have 2 minutes to take a photo of what you’re doing right at that moment. It’s all about being real!
+              </li>
+              <li>
+                <strong>Share & Connect:</strong> After you snap your pic, you can share it with friends and see their moments too. Let’s keep it genuine!
+              </li>
+            </ul>
+          </p>
+          <p>
+            Remember, it’s not about the likes; it’s about capturing life as it is. So get ready to embrace the spontaneity! 🎉
+          </p>
+        </div>
+
       </section>
 
       <section id="contact">
         <h2>CONTACT</h2>
-        <p>You can reach me at: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+        <p>You can reach me at: <a href="mailto:pedropa140@gmail.com">pedropa140@gmail.com</a></p>
       </section>
     </div>
   );
