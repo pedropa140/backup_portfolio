@@ -1,0 +1,42 @@
+section#about {
+    max-width: 70%;
+    margin: auto;
+  }
+  
+  .about-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    background: rgb(103, 101, 101);
+    flex-direction: row; /* Places the image on the left */
+  }
+  
+  .about-text {
+    flex: 1;
+    padding-left: 20px; /* Changed to padding-left to match new layout */
+  }
+  
+  .about-text h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .about-text p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  .about-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .about-image img {
+    max-width: 50%; /* Adjusted to ensure image fits container */
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }

@@ -2,9 +2,23 @@ import React, { useState, useEffect } from 'react';
 import './HeaderSection.css';
 
 const images = [
-  '/images/image_1.JPG',
-  '/images/image_2.JPG',
-  '/images/image_3.JPG'
+  '/header/image_1.JPG',
+  '/header/image_2.JPG',
+  '/header/image_3.JPG',
+  '/header/image_4.JPG',
+  '/header/image_5.JPG',
+  '/header/image_6.JPG',
+  '/header/image_7.JPG',
+  '/header/image_8.JPG',
+  '/header/image_9.JPG',
+  '/header/image_10.JPG',
+  '/header/image_11.JPG',
+  '/header/image_12.JPG',
+  '/header/image_13.JPG',
+  '/header/image_14.JPG',
+  '/header/image_15.JPG',
+  '/header/image_16.JPG',
+  '/header/image_17.JPG'
 ];
 
 function HeaderSection() {
