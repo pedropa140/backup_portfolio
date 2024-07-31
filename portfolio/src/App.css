@@ -37,6 +37,10 @@
   cursor: pointer;
 }
 
+.App-header h1:hover {
+  color: #61dafb;
+}
+
 nav {
   flex: 1;
   display: flex;
