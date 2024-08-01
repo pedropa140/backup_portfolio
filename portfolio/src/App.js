@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './App.css';
 import HeaderSection from './components/HeaderSection';
 import AboutMe from './components/AboutMe';
+import Projects from './components/Projects';
 
 function App() {
   const [scrolled, setScrolled] = useState(false);
@@ -34,14 +35,15 @@ function App() {
         <nav>
           <ul>
             <li><a href="#about">ABOUT ME</a></li> 
-            <li><a href="#projects">PROJECTS</a></li>
             <li><a href="#experience">EXPERIENCE</a></li>
+            <li><a href="#projects">PROJECTS</a></li>
             <li><a href="#github">GITHUB</a></li>
             <li><a href="#hackathon">HACKATHON</a></li>
             <li><a href="#devpost">DEVPOST</a></li>
             <li><a href="#linkedin">LINKEDIN</a></li>
             <li><a href="#blog">BLOG</a></li>
             <li><a href="#photos">PHOTOS</a></li>
+            <li><a href="https://drive.google.com/file/d/1f99KqNevspssmND79ZDzl73ociKV79nk/view?usp=sharing" target="_blank" rel="noopener noreferrer">RESUME</a></li>
             <li><a href="#contact">CONTACT</a></li>
           </ul>
         </nav>
@@ -49,57 +51,52 @@ function App() {
 			
       <HeaderSection />
       <AboutMe />
-
-      <section id="projects" className="projects-section">
-        <h2>PROJECTS</h2>
-        <div className="project">
-          <p>Coming Soon</p>
-        </div>
-      </section>
-
-      <section id="experience" className="projects-section">
+      
+      <section id="experience" className="not_completed">
         <h2>EXPERIENCE</h2>
         <div className="project">
           <p>Coming Soon</p>
         </div>
       </section>
 
-      <section id="github" className="projects-section">
+      <Projects />
+
+      <section id="github" className="not_completed">
         <h2>GITHUB</h2>
         <div className="project">
           <p>Coming Soon</p>
         </div>
       </section>
 
-      <section id="hackathon" className="projects-section">
+      <section id="hackathon" className="not_completed">
         <h2>HACKATHON</h2>
         <div className="project">
           <p>Coming Soon</p>
         </div>
       </section>
 
-      <section id="devpost" className="projects-section">
+      <section id="devpost" className="not_completed">
         <h2>DEVPOST</h2>
         <div className="project">
           <p>Coming Soon</p>
         </div>
       </section>
 
-			<section id="linkedin" className="projects-section">
+			<section id="linkedin" className="not_completed">
         <h2>LINKEDIN</h2>
         <div className="project">
           <p>Coming Soon</p>
         </div>
       </section>
 
-      <section id="blog" className="projects-section">
+      <section id="blog" className="not_completed">
         <h2>BLOG</h2>
         <div className="project">
           <p>Coming Soon</p>
         </div>
       </section>
 
-      <section id="photos" className="projects-section">
+      <section id="photos" className="not_completed">
         <h2>PHOTOS</h2>
         <div className="project">
           <p>Coming Soon</p>
