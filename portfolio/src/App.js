@@ -39,8 +39,8 @@ function App() {
             <li><a href="#projects">PROJECTS</a></li>
             <li><a href="#github">GITHUB</a></li>
             <li><a href="#hackathon">HACKATHON</a></li>
-            <li><a href="#devpost">DEVPOST</a></li>
-            <li><a href="#linkedin">LINKEDIN</a></li>
+            <li><a href="https://devpost.com/pedropa140" target="_blank" rel="noopener noreferrer">DEVPOST</a></li>
+            <li><a href="https://www.linkedin.com/in/pedro-pajarillo-jr/" target="_blank" rel="noopener noreferrer">LINKEDIN</a></li>
             <li><a href="#blog">BLOG</a></li>
             <li><a href="#photos">PHOTOS</a></li>
             <li><a href="https://drive.google.com/file/d/1f99KqNevspssmND79ZDzl73ociKV79nk/view?usp=sharing" target="_blank" rel="noopener noreferrer">RESUME</a></li>
@@ -70,20 +70,6 @@ function App() {
 
       <section id="hackathon" className="not_completed">
         <h2>HACKATHON</h2>
-        <div className="project">
-          <p>Coming Soon</p>
-        </div>
-      </section>
-
-      <section id="devpost" className="not_completed">
-        <h2>DEVPOST</h2>
-        <div className="project">
-          <p>Coming Soon</p>
-        </div>
-      </section>
-
-			<section id="linkedin" className="not_completed">
-        <h2>LINKEDIN</h2>
         <div className="project">
           <p>Coming Soon</p>
         </div>
