@@ -55,7 +55,7 @@ function App() {
       <section id="experience" className="not_completed">
         <h2>EXPERIENCE</h2>
         <div className="project">
-          <p>Coming Soon</p>
+          <p>Coming Soon.</p>
         </div>
       </section>
 
