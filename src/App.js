@@ -64,7 +64,7 @@ function App() {
       <section id="github" className="not_completed">
         <h2>GITHUB</h2>
         <div className="project">
-          <p>Coming Soon</p>
+          <p>Coming .</p>
         </div>
       </section>
 
