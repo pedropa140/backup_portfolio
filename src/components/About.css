@@ -1,8 +1,7 @@
 .about-section {
   background-color: #f4f4f9;
   color: #333;
-  /* padding: 60px 20px; */
-  padding: 60px 20px; /* Restore the padding for visual spacing */
+  padding: 60px 20px;
 }
 
 .about-content {
@@ -11,7 +10,7 @@
 }
 
 .about-text {
-  font-size: 17px; /* Ensure 'px' unit for font-size */
+  font-size: 17px;
   line-height: 1.8;
   text-align: left;
   text-indent: 20px;
@@ -20,6 +19,9 @@
 .about-image {
   float: left;
   margin-right: 20px;
+  max-width: 100%;
+  height: auto;
+  width: 40%;
 }
 
 .about-span {
@@ -27,10 +29,13 @@
   color: #f09a36;
 }
 
-/* Adjustments for smaller screens */
 @media (max-width: 1200px) {
   .about-text {
     font-size: 16px;
+  }
+
+  .about-image {
+    width: 35%;
   }
 }
 
@@ -38,19 +43,24 @@
   .about-text {
     font-size: 15px;
   }
+
+  .about-image {
+    width: 30%;
+  }
 }
 
 @media (max-width: 768px) {
   .about-text {
     font-size: 14px;
-    text-align: center; /* Center text for better mobile readability */
-    text-indent: 0; /* Remove text indent on smaller screens */
+    text-align: center;
+    text-indent: 0;
   }
 
   .about-image {
     float: none;
     display: block;
     margin: 0 auto 20px;
+    width: 60%;
   }
 }
 
@@ -59,11 +69,19 @@
     font-size: 13px;
     line-height: 1.6;
   }
+
+  .about-image {
+    width: 80%;
+  }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 375px) {
   .about-text {
     font-size: 12px;
     line-height: 1.5;
+  }
+
+  .about-image {
+    width: 90%; /* Maximize image size for the smallest screens */
   }
 }
