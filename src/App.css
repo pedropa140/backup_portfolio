@@ -1,102 +1,87 @@
-/* App.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+html,
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f9;
+  color: #333;
+  scrollbar-width: thin;
+  scrollbar-color: #333 transparent;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #333;
+  border-radius: 10px;
+  border: 3px solid rgba(0, 0, 0, 0);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
 
 .App {
-  text-align: center;
-  background: rgb(39, 36, 36);
-  color: white;
-  overflow-x: hidden;
-  overflow-y: scroll;
-}
-.App::-webkit-scrollbar {
-  visibility: hidden;
-  
-  width: 0px;
-}
-
-.App-header {
-  background: rgb(6, 5, 5);
-  padding: 10px 20px;
-  color: white;
-  position: fixed;
-  width: 99%;
-  top: 0;
-  left: 0;
-  z-index: 1000;
-  transition: padding 0.3s ease;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.App-header.scrolled {
-  padding: 5px 20px;
-}
-
-.App-header h1 {
-  margin: 0;
-  cursor: pointer;
-}
-
-.App-header h1:hover {
-  color: #61dafb;
-}
-
-nav {
-  flex: 1;
-  display: flex;
-  justify-content: flex-end;
-}
-
-nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-}
-
-nav ul li {
-  margin: 0 15px;
-  font-weight: bolder;
-}
-
-nav ul li a {
-  color: white;
-  text-decoration: none;
-  font-size: 18px;
-  transition: color 0.3s ease;
-}
-
-nav ul li a:hover {
-  color: #61dafb;
-}
-
-section.not_completed {
-  max-width: 70%;
-  margin: auto;
-  padding: 10px;
-}
-
-section h2 {
-  padding-top: 20px;
-}
-
-#contact {
-  background: rgb(6, 5, 5);;
-  color: white;
-  margin-bottom: -50px;
-  height: 100px;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-html::-webkit-scrollbar {
-  visibility: hidden;
   width: 100%;
-  padding: 0px;
+  min-height: 100vh;
 }
 
-#contact p {
-  color:white;
+section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar-links li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .header h1 {
+    font-size: 2.5rem;
+  }
+
+  .header p {
+    font-size: 1.2rem;
+  }
+
+  .projects-grid {
+    flex-direction: column;
+  }
+
+  .project-card {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .header h1 {
+    font-size: 2rem;
+  }
+
+  .header p {
+    font-size: 1rem;
+  }
+
+  section {
+    padding: 40px 10px;
+  }
 }

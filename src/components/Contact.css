@@ -1,0 +1,16 @@
+.contact-section {
+  background-color: #333;
+  color: white;
+}
+
+.contact-section p {
+  font-size: 1.2rem;
+  margin: 10px 0;
+  color: white;
+}
+
+.contact-section a {
+  font-size: 1.2rem;
+  margin: 10px 0;
+  color: #f09a36;
+}

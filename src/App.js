@@ -1,98 +1,25 @@
-import React, { useState, useEffect } from 'react';
-import './App.css';
-import HeaderSection from './components/HeaderSection';
-import AboutMe from './components/AboutMe';
+import React from 'react';
+import Navbar from './components/Navbar';
+import Header from './components/Header';
+import About from './components/About';
+import Education from './components/Education';
+import Experience from './components/Experience';
 import Projects from './components/Projects';
+import Hackathon from './components/Hackathon';
+import Contact from './components/Contact';
+import './App.css';
 
 function App() {
-  const [scrolled, setScrolled] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 50);
-    };
-
-    window.addEventListener('scroll', handleScroll);
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
-
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-    
-    // Remove the hash (#) from the URL
-    if (window.location.hash) {
-      window.history.pushState("", document.title, window.location.pathname + window.location.search);
-    }
-  };
-
   return (
     <div className="App">
-      <header className={`App-header ${scrolled ? 'scrolled' : ''}`}>
-        <h1 onClick={scrollToTop} style={{ cursor: 'pointer' }}>PEDRO PAJARILLO JR.</h1>
-        <nav>
-          <ul>
-            <li><a href="#about">ABOUT ME</a></li> 
-            <li><a href="#experience">EXPERIENCE</a></li>
-            <li><a href="#projects">PROJECTS</a></li>
-            <li><a href="#github">GITHUB</a></li>
-            <li><a href="#hackathon">HACKATHON</a></li>
-            <li><a href="https://devpost.com/pedropa140" target="_blank" rel="noopener noreferrer">DEVPOST</a></li>
-            <li><a href="https://www.linkedin.com/in/pedro-pajarillo-jr/" target="_blank" rel="noopener noreferrer">LINKEDIN</a></li>
-            <li><a href="#blog">BLOG</a></li>
-            <li><a href="#photos">PHOTOS</a></li>
-            <li><a href="https://drive.google.com/file/d/1f99KqNevspssmND79ZDzl73ociKV79nk/view?usp=sharing" target="_blank" rel="noopener noreferrer">RESUME</a></li>
-            <li><a href="#contact">CONTACT</a></li>
-          </ul>
-        </nav>
-      </header>
-			
-      <HeaderSection />
-      <AboutMe />
-      
-      <section id="experience" className="not_completed">
-        <h2>EXPERIENCE</h2>
-        <div className="project">
-          <p>Coming Soon.</p>
-        </div>
-      </section>
-
+      <Navbar />
+      <Header />
+      <About />      
+      <Education />
+      <Experience />
       <Projects />
-
-      <section id="github" className="not_completed">
-        <h2>GITHUB</h2>
-        <div className="project">
-          <p>Coming .</p>
-        </div>
-      </section>
-
-      <section id="hackathon" className="not_completed">
-        <h2>HACKATHON</h2>
-        <div className="project">
-          <p>Coming Soon</p>
-        </div>
-      </section>
-
-      <section id="blog" className="not_completed">
-        <h2>BLOG</h2>
-        <div className="project">
-          <p>Coming Soon</p>
-        </div>
-      </section>
-
-      <section id="photos" className="not_completed">
-        <h2>PHOTOS</h2>
-        <div className="project">
-          <p>Coming Soon</p>
-        </div>
-      </section>
-
-      <section id="contact">
-        <h2>CONTACT</h2>
-        <p>You can reach me at: <a href="mailto:pedropa140@gmail.com">pedropa140@gmail.com</a></p>
-      </section>
+      <Hackathon />
+      <Contact />
     </div>
   );
 }
