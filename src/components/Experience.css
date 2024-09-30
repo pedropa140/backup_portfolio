@@ -1,61 +1,62 @@
-.timeline {
+.experience-timeline {
     position: relative;
     max-width: 800px;
     margin: 0 auto;
-    padding-top: 20px;
+    padding-top: 0px;
     padding-bottom: 0px;
     padding-left: 20px;
     padding-right: 20px;
 }
 
-.timeline-item {
+.experience-timeline-item {
     position: relative;
     padding: 20px;
     border-radius: 6px;
     margin: 10px 0;
 }
 
-.timeline-item.left {
+.experience-timeline-item.left {
     left: -20px;
     background-color: #f9f9f9;
 }
 
-.timeline-item.right {
+.experience-timeline-item.right {
     left: 20px;
     background-color: #e3f2fd;
 }
 
-.timeline-content {
+.experience-timeline-content {
     padding: 20px;
     border-radius: 6px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-h3 {
+.experience-timeline-content h3 {
     margin: 0;
     font-size: 1.2em;
 }
 
-h4 {
+.experience-timeline-content h4 {
     margin: 5px 0;
     font-weight: normal;
 }
 
-p {
+.experience-timeline-content p {
     margin: 5px 0;
     color: #666;
 }
 
-ul {
+.experience-timeline-content ul {
     margin: 10px 0 0;
     padding-left: 20px;
 }
 
-li {
+.experience-timeline-content li {
     margin: 5px 0;
+    text-align: left;
 }
 
-.timeline:before {
+.experience-timeline:before {
     content: '';
     position: absolute;
     top: 0;

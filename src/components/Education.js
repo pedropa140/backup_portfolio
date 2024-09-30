@@ -1,5 +1,5 @@
 import React from 'react';
-import './Experience.css';
+import './Education.css';
 
 const experiences = [
     {
@@ -24,9 +24,9 @@ const Experience = () => {
     return (
         <section id="education" >
             <h2>Education</h2>
-            <div className='timeline'>    {experiences.map((exp, index) => (
-                    <div key={index} className={`timeline-item ${index % 2 === 0 ? 'left' : 'right'}`}>
-                        <div className="timeline-content">
+            <div className='education-timeline'>    {experiences.map((exp, index) => (
+                    <div key={index} className={`education-timeline-item ${index % 2 === 0 ? 'left' : 'right'}`}>
+                        <div className="education-timeline-content">
                             <h3>{exp.title}</h3>
                             <h4>{exp.institution} - {exp.location}</h4>
                             <p>{exp.date}</p>

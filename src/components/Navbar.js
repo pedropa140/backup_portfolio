@@ -58,7 +58,7 @@ function Navbar() {
               PROJECTS
             </a>
           </li>
-          <li>
+          {/* <li>
             <a href="https://github.com/pedropa140" target="_blank" rel="noopener noreferrer">
               GITHUB <span className="new-tab-icon">🔗</span>
             </a>
@@ -67,7 +67,7 @@ function Navbar() {
             <a href="https://devpost.com/pedropa140" target="_blank" rel="noopener noreferrer">
               DEVPOST <span className="new-tab-icon">🔗</span>
             </a>
-          </li>
+          </li> */}
           <li>
             <a href="#hackathon" onClick={(e) => {
               e.preventDefault();
@@ -76,11 +76,11 @@ function Navbar() {
               HACKATHON
             </a>
           </li>
-          <li>
+          {/* <li>
             <a href="https://www.linkedin.com/in/pedro-pajarillo-jr/" target="_blank" rel="noopener noreferrer">
               LINKEDIN <span className="new-tab-icon">🔗</span>
             </a>
-          </li>
+          </li> */}
           <li>
             <a href="#resume" onClick={(e) => {
               e.preventDefault();

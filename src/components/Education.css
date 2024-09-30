@@ -1,58 +1,62 @@
-.timeline {
+.education-timeline {
     position: relative;
     max-width: 800px;
     margin: 0 auto;
-    padding: 20px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
-.timeline-item {
+.education-timeline-item {
     position: relative;
     padding: 20px;
     border-radius: 6px;
     margin: 10px 0;
 }
 
-.timeline-item.left {
+.education-timeline-item.left {
     left: -20px;
     background-color: #f9f9f9;
 }
 
-.timeline-item.right {
+.education-timeline-item.right {
     left: 20px;
     background-color: #e3f2fd;
 }
 
-.timeline-content {
+.education-timeline-content {
     padding: 20px;
     border-radius: 6px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-h3 {
+.education-timeline-content h3 {
     margin: 0;
     font-size: 1.2em;
 }
 
-h4 {
+.education-timeline-content h4 {
     margin: 5px 0;
     font-weight: normal;
 }
 
-p {
+.education-timeline-content p {
     margin: 5px 0;
     color: #666;
 }
 
-ul {
+.education-timeline-content ul {
     margin: 10px 0 0;
     padding-left: 20px;
 }
 
-li {
+.education-timeline-content li {
     margin: 5px 0;
+    /* text-align: left; */
 }
 
-.timeline:before {
+.education-timeline:before {
     content: '';
     position: absolute;
     top: 0;
