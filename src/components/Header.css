@@ -43,6 +43,7 @@
   text-align: center;
 }
 
+/* Base styling for h1 and h3 */
 section.index-page-middle-header h1 {
   font-size: 72px;
   font-weight: 700;
@@ -56,4 +57,55 @@ section.index-page-middle-header h3 {
   text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
   margin-top: 15px;
   font-weight: 700;
+}
+
+/* Responsive design for smaller devices */
+@media (max-width: 1200px) {
+  section.index-page-middle-header h1 {
+    font-size: 60px;
+  }
+
+  section.index-page-middle-header h3 {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 992px) {
+  section.index-page-middle-header h1 {
+    font-size: 50px;
+  }
+
+  section.index-page-middle-header h3 {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  section.index-page-middle-header h1 {
+    font-size: 40px;
+  }
+
+  section.index-page-middle-header h3 {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 576px) {
+  section.index-page-middle-header h1 {
+    font-size: 30px;
+  }
+
+  section.index-page-middle-header h3 {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 400px) {
+  section.index-page-middle-header h1 {
+    font-size: 24px;
+  }
+
+  section.index-page-middle-header h3 {
+    font-size: 10px;
+  }
 }

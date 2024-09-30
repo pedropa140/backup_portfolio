@@ -4,16 +4,44 @@ import './Hackathon.css';
 function Hackathon() {
   return (
     <section id="hackathon" className="hackathon-section">
-      <h2>Hackathon Projects</h2>
+      <h2>Hackathons</h2>
       <div className="hackathon-container">
         <div className="hackathon-card">
-          <h3>Hackathon Project 1</h3>
+          <h3>
+            DragonHacks 2024 <span className="winner-label">Winner</span>
+          </h3>
           <p>
             Description of the project built during the hackathon, technologies used, and the outcome.
           </p>
         </div>
         <div className="hackathon-card">
-          <h3>Hackathon Project 2</h3>
+          <h3>
+            HackPrinceton Spring 2024 <span className="winner-label">Winner</span>
+          </h3>
+          <p>
+            Description of the project built during the hackathon, technologies used, and the outcome.
+          </p>
+        </div>
+        <div className="hackathon-card">
+          <h3>
+            HackRU Spring 2024 <span className="winner-label">Winner</span>
+          </h3>
+          <p>
+            Description of the project built during the hackathon, technologies used, and the outcome.
+          </p>
+        </div>
+        <div className="hackathon-card">
+          <h3>
+            RUIEEE Spring Hackathon 2024 <span className="winner-label">Winner</span>
+          </h3>
+          <p>
+            Description of the project built during the hackathon, technologies used, and the outcome.
+          </p>
+        </div>
+        <div className="hackathon-card">
+          <h3>
+            HackHERS 2024 <span className="winner-label">Winner</span>
+          </h3>
           <p>
             Description of the project built during the hackathon, technologies used, and the outcome.
           </p>

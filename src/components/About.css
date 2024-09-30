@@ -2,6 +2,7 @@
   background-color: #f4f4f9;
   color: #333;
   /* padding: 60px 20px; */
+  padding: 60px 20px; /* Restore the padding for visual spacing */
 }
 
 .about-content {
@@ -10,7 +11,7 @@
 }
 
 .about-text {
-  font-size: 17;
+  font-size: 17px; /* Ensure 'px' unit for font-size */
   line-height: 1.8;
   text-align: left;
   text-indent: 20px;
@@ -26,10 +27,43 @@
   color: #f09a36;
 }
 
+/* Adjustments for smaller screens */
+@media (max-width: 1200px) {
+  .about-text {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 992px) {
+  .about-text {
+    font-size: 15px;
+  }
+}
+
 @media (max-width: 768px) {
+  .about-text {
+    font-size: 14px;
+    text-align: center; /* Center text for better mobile readability */
+    text-indent: 0; /* Remove text indent on smaller screens */
+  }
+
   .about-image {
     float: none;
     display: block;
     margin: 0 auto 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .about-text {
+    font-size: 13px;
+    line-height: 1.6;
+  }
+}
+
+@media (max-width: 400px) {
+  .about-text {
+    font-size: 12px;
+    line-height: 1.5;
   }
 }

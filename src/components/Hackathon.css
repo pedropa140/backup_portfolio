@@ -1,13 +1,17 @@
 .hackathon-section {
     background-color: #fff;
-    padding: 60px 20px;
+    padding-top: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 60px;
     text-align: center;
 }
 
 .hackathon-container {
     display: grid;
     gap: 20px;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Use auto-fit and minmax */
+    justify-content: center;
 }
 
 .hackathon-card {
@@ -43,4 +47,16 @@
     .hackathon-container {
         grid-template-columns: repeat(3, 1fr);
     }
+}
+
+.winner-label {
+    display: inline-block;
+    background-color: #ffd700; /* Gold color for the winner */
+    color: #fff;
+    font-size: 0.8rem;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 12px;
+    margin-left: 10px;
+    vertical-align: middle;
 }
