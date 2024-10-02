@@ -8,40 +8,44 @@ function Projects() {
   const projects = [
     {
       title: 'BeReal-Bot',
-      description: 'A bot that helps schedule BeReal photos.',
+      description: '<p><strong>BeReal-Bot</strong> is designed to capture authentic moments, just like the BeReal app. Every day, at a random time, you’ll be prompted to share a photo that showcases your true self—no filters, no edits.<br><strong>How It Works |</strong>\n<strong>Random Moment:</strong>\nYou’ll receive a notification at a surprise time.\n<strong>Snap a Pic:</strong>\nYou’ll have 2 minutes to take a photo of what you’re doing right at that moment. It’s all about being real!\n<strong>Share & Connect:</strong>\nAfter you snap your pic, you can share them with friends and see their moments too. Let’s keep it genuine!</p>',
       images: [
-        'path-to-image/bereal-bot-1.png',
-        'path-to-image/bereal-bot-2.png'
+        '/Images/Projects/bereal-bot-1.png',
+        '/Images/Projects/bereal-bot-2.png'
       ],
-      date: 'August 2023'
+      date: 'July 2024',
+      technologies: ['Python', 'Discord API', 'SQL']
     },
     {
       title: 'Reminder-Bot',
-      description: 'A bot that reminds you about your tasks.',
+      description: '<p><strong>Reminder-Bot</strong> is a Discord bot that allows users to keep track of what tasks they have throughout the week or even today. In addition, if the user is in the database, it tells you what tasks you planned on that given day by sending you a direct message. This bot uses a database coded in <strong>SQL</strong> and keeps track of the user and their preference when they want to be messaged in the morning. In addition, it keeps track of the user\'s task and if they are completed or not.</p>',
       images: [
-        'path-to-image/reminder-bot-1.png',
-        'path-to-image/reminder-bot-2.png'
+        '/Images/Projects/reminder-bot-1.png',
+        '/Images/Projects/reminder-bot-2.png'
       ],
-      date: 'June 2023'
+      date: 'April 2024',
+      technologies: ['Python', 'Discord API', 'SQL', 'Google Calendar API']
     },
     {
       title: 'FaceDigitClassification',
-      description: 'A project for classifying digits using face recognition.',
+      description: '',
       images: [
-        'path-to-image/facedigit-classification-1.png',
-        'path-to-image/facedigit-classification-2.png'
+        // '/Images/Projects/facedigit-classification-1.png',
+        // '/Images/Projects/facedigit-classification-2.png'
       ],
-      date: 'January 2024'
+      date: 'May 2023',
+      technologies: ['Python']
     },
     {
       title: 'PhotoAlbum Application',
-      description: 'An app to store and manage your photo albums.',
+      description: '',
       images: [
-        'path-to-image/photoalbum-application-1.png',
-        'path-to-image/photoalbum-application-2.png',
-        'path-to-image/photoalbum-application-3.png'
+        // '/Images/Projects/photoalbum-application-1.png',
+        // '/Images/Projects/photoalbum-application-2.png',
+        // '/Images/Projects/photoalbum-application-3.png'
       ],
-      date: 'March 2022'
+      date: 'May 2022',
+      technologies: ['Java', 'JavaFX']
     }
   ];
 
@@ -59,9 +63,13 @@ function Projects() {
       <div className="projects-grid">
         {projects.map((project, index) => (
           <div key={index} className="project-card" onClick={() => openModal(project)}>
-            <h3>{project.title}</h3>
+            <h3>{project.title} <span className="technologies">({project.technologies.join(', ')})</span></h3>
             <p className="project-date"><strong>Date:</strong> {project.date}</p>
-            <p>{project.description.substring(0, 50)}...</p>
+            {/* Display a truncated version of the HTML description */}
+            <div
+              className="project-description"
+              dangerouslySetInnerHTML={{ __html: project.description.substring(0, 75) + '...' }}
+            />
           </div>
         ))}
       </div>
@@ -70,14 +78,20 @@ function Projects() {
         <div className="modal-overlay" onClick={closeModal}>
           <div className="modal-content" onClick={(e) => e.stopPropagation()}>
             <span className="close-button" onClick={closeModal}>&times;</span>
-            <h2>{selectedProject.title}</h2>
+            <h2>{selectedProject.title} <span className="technologies">({selectedProject.technologies.join(', ')})</span></h2>
             <p className="project-date"><strong>Created:</strong> {selectedProject.date}</p>
-            <div className="modal-images">
-              {selectedProject.images.map((image, index) => (
-                <img key={index} src={image} alt={`${selectedProject.title} ${index + 1}`} />
-              ))}
-            </div>
-            <p>{selectedProject.description}</p>
+
+            {/* Conditionally render the modal-images div if there are images */}
+            {selectedProject.images.length > 0 && (
+              <div className="modal-images">
+                {selectedProject.images.map((image, index) => (
+                  <img key={index} src={image} alt={`${selectedProject.title} ${index + 1}`} />
+                ))}
+              </div>
+            )}
+
+            {/* Render HTML description */}
+            <div className="project-description" dangerouslySetInnerHTML={{ __html: selectedProject.description }} />
           </div>
         </div>
       )}

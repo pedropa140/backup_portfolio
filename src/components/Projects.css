@@ -52,13 +52,15 @@
 
 .modal-images {
   display: flex;
-  flex-wrap: wrap;
+  height: 80%;
+  flex-wrap: nowrap;
   gap: 10px;
+  align-items: center;
   justify-content: center;
 }
 
 .modal-images img {
-  max-width: 48%; /* Adjust this to control image sizes */
+  height: 100%;
   border-radius: 8px;
 }
 
@@ -79,9 +81,35 @@
   color: red;
 }
 
+.projects-grid .project-description p{
+  font-size: 15px;
+  text-align: left;
+  text-indent: 0px;
+  padding-left: 0px;
+  padding-top: 0px;
+  border-top: 0px solid #f09a36;
+  margin-top: 0px;
+}
+
 .project-card:hover {
   transform: translateY(-5px);
   cursor: pointer;
+}
+
+.technologies {
+  font-size: 12px; /* Slightly smaller font size */
+  color: #666; /* Lighter color for less emphasis */
+}
+
+/* Indent paragraphs in project description */
+.project-description p {
+  /* padding-left: 20px; */
+  text-indent: 20px;
+  padding-left: 5px;
+  text-align: left;
+  padding-top: 10px;
+  border-top: 3px solid #f09a36;
+  margin-top: 30px;
 }
 
 @media (min-width: 768px) {

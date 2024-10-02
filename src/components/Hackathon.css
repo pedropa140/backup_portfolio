@@ -10,7 +10,7 @@
 .hackathon-container {
     display: grid;
     gap: 20px;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Use auto-fit and minmax */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     justify-content: center;
 }
 
@@ -21,20 +21,57 @@
     text-align: left;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
+    display: flex; /* Use flexbox */
+    flex-direction: column; /* Stack children vertically */
+    justify-content: space-between; /* Space between children */
+    height: 300px; /* Fixed height for the card */
 }
 
 .hackathon-card:hover {
     transform: translateY(-5px);
 }
 
-.hackathon-card h3 {
-    font-size: 1.6rem;
-    margin-bottom: 10px;
-}
+/* .hackathon-card h3 {
+    font-size: 20px;
+    text-transform: capitalize;
+} */
 
 .hackathon-card p {
-    font-size: 1rem;
+    font-size: 15px;
     color: #666;
+    text-indent: 10px;
+}
+
+.hackathon-title {
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.hackathon-name {
+    font-size: 16px;
+    color: #333;
+    font-weight: bold;
+}
+
+.project-link-container {
+    margin-top: auto;
+    text-align: right;
+}
+
+.project-link {
+    font-size: 0.8rem;
+    color: #888;
+    display: block;
+    margin-top: 10px;
+}
+
+p.technologies {
+    color: #555;
+    font-size: 12px;
+    text-indent: 0px;
+    font-weight: bolder;
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
 
 @media (min-width: 768px) {
@@ -51,7 +88,7 @@
 
 .winner-label {
     display: inline-block;
-    background-color: #ffd700; /* Gold color for the winner */
+    background-color: #ffd700;
     color: #fff;
     font-size: 0.8rem;
     font-weight: bold;
