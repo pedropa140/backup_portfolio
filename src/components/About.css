@@ -1,7 +1,11 @@
 .about-section {
   background-color: #f4f4f9;
   color: #333;
-  padding: 60px 20px;
+  /* padding: 60px 20px; */
+  padding-top: 60px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 0px;
 }
 
 .about-content {

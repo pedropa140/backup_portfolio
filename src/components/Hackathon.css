@@ -39,7 +39,7 @@
 .hackathon-card p {
     font-size: 15px;
     color: #666;
-    text-indent: 10px;
+    /* text-indent: 10px; */
 }
 
 .hackathon-title {
